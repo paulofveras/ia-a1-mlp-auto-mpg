@@ -144,7 +144,9 @@ def executar(caminho_config: str) -> str:
                 mlflow.log_artifact(caminho_pesos, artifact_path="checkpoint")
 
             try:
-                mlflow.pytorch.log_model(modelo, name="modelo")
+                modelo.eval()
+                # O formato de serialização desta versão do MLflow exige um exemplo de entrada
+                mlflow.pytorch.log_model(modelo, name="modelo", input_example=dados["X_treino"][:5])
             except Exception as erro:
                 print(f"  Aviso: log_model falhou ({erro}); os pesos continuam em checkpoint/")
 
