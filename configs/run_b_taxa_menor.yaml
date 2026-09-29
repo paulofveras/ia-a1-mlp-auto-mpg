@@ -1,0 +1,20 @@
+# Run B — igual à A, mudando apenas a taxa de aprendizado
+nome_run: B-taxa-menor
+pergunta: "Uma taxa de aprendizado menor (0.001) gera curvas mais estáveis e menor erro de validação?"
+
+semente: 42
+
+dados:
+  caminho: data/auto-mpg.csv
+  frac_validacao: 0.15
+  frac_teste: 0.15
+
+modelo:
+  camadas_ocultas: [32, 16]
+  dropout: 0.0
+
+treino:
+  epocas: 150
+  tamanho_lote: 32
+  taxa_aprendizado: 0.001
+  l2: 0.0

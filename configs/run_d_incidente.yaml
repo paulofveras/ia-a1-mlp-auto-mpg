@@ -1,0 +1,20 @@
+# Run D — incidente proposital para o diagnóstico (sintoma, hipótese, nova run)
+nome_run: D-incidente-taxa-alta
+pergunta: "O que acontece com as curvas quando a taxa de aprendizado é exagerada (0.5)?"
+
+semente: 42
+
+dados:
+  caminho: data/auto-mpg.csv
+  frac_validacao: 0.15
+  frac_teste: 0.15
+
+modelo:
+  camadas_ocultas: [32, 16]
+  dropout: 0.0
+
+treino:
+  epocas: 150
+  tamanho_lote: 32
+  taxa_aprendizado: 0.5
+  l2: 0.0

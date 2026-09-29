@@ -1,0 +1,8 @@
+name: ia-a1-mlp
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - -r requirements.txt

@@ -1,0 +1,17 @@
+# Histórico local do MLflow (cada pessoa gera o seu ao rodar)
+mlflow.db
+mlruns/
+mlartifacts/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Pesos de modelo gerados localmente
+*.pt
+
+# Sistema
+.DS_Store
+Thumbs.db
+.vscode/

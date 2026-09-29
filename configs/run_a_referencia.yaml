@@ -1,0 +1,20 @@
+# Run A — configuração de referência (linha de base)
+nome_run: A-referencia
+pergunta: "Qual é o desempenho de base da MLP com taxa 0.01 e sem regularização?"
+
+semente: 42
+
+dados:
+  caminho: data/auto-mpg.csv
+  frac_validacao: 0.15
+  frac_teste: 0.15
+
+modelo:
+  camadas_ocultas: [32, 16]
+  dropout: 0.0
+
+treino:
+  epocas: 150
+  tamanho_lote: 32
+  taxa_aprendizado: 0.01
+  l2: 0.0
