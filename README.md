@@ -7,7 +7,7 @@ Pipeline de treino, validação e teste de uma rede **Multi-Layer Perceptron (ML
 prever o consumo de combustível de veículos, com rastreamento completo de cada execução no **MLflow**:
 parâmetros, métricas por época, artefatos e traces das etapas.
 
-> Vídeo de apresentação: **[link do YouTube — adicionar após a gravação]**
+> Vídeo de apresentação: **https://youtu.be/nqEZ13fbpcI**
 
 ---
 
